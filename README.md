@@ -6,7 +6,7 @@ The course gives an overview of security issues for software, and provides progr
 ### Assignment 1: 
 **The task of this project is to analyse the security of a web application using automated tools for static and dynamic analysis, as well as manual inspection.
 The result  of the analysis will be a report, explaining both the theory and results of your analysis 
-Contains pentest report of a insecure version of INCHAT web applicaton. Used static analysis and dynamic analysis**
+Contains pentest report of a insecure version of INCHAT web applicaton.**
 
 
 ### Assignment 2: 
