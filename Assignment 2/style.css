@@ -1,0 +1,297 @@
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #040404;
+    line-height: 1;
+    max-width: 50em;
+    padding: 30px;
+    text-align: justify;
+    border-radius: 1em;
+}
+
+.thread-head {
+   display: grid;
+   margin: 0;
+   padding: 0.1em 0.1em 0.1em;
+   grid-template-columns: 20% auto;
+   grid-template-areas:
+           "topic topic"
+           "starter date";
+}
+
+.forum-head {
+   display: grid;
+   margin: 0;
+   grid-template-columns: 20% auto;
+   grid-template-areas:
+           "topic topic"
+           "symbol description";
+}
+
+.forum {
+   display: grid;
+   grid-gap: 1em;
+   grid-template-columns: 50% 50%;
+   grid-template-areas:
+           "header header";
+}
+
+.main {
+    max-width: 50em;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 10em auto 10em;
+    grid-template-areas:
+        "chanlist channel chanmenu";
+}
+
+.channel {
+    grid-area: channel;
+    padding-right: 0.5em;
+}
+
+
+.chanlist {
+    grid-area: chanlist;
+    list-style-type: square;
+    max-width: 10em;
+}
+
+.chanmenu {
+    grid-area: chanmenu;
+    max-width: 10em;
+}
+
+header {
+   grid-area: header;
+}
+
+
+
+.starter{
+   grid-area: starter;
+   margin: 0 0 0 0;
+   padding: 0.1em 0.1em 1em 0.1em;
+   background-color: #e0f0ff;
+   border: 0.1em solid #88bbff;
+}
+
+.date{
+   text-align: right;
+   grid-area: date;
+   margin: 0 0 0 0;
+   padding: 0.1em 0.1em 1em 0.1em;
+	background-color: #e0f0ff;
+	border: 0.1em solid #88bbff;
+}
+
+.topic {
+	grid-area: topic;
+   margin: 0;
+   padding: 0.8em 0.8em 0.5em 0.8em;
+   border-top-left-radius: 1em;
+   border-top-right-radius: 1em;
+   background-color: #88bbff;
+   color: #040404;
+}
+
+.actionbar {
+    padding: 0.4em 0 0.4em 0;
+    margin-bottom: 0.4em;
+}
+
+
+.action {
+   border: 0.1em solid #88bbff;
+   margin: auto;
+   padding: 0.3em;
+   font-size: 1em;
+}
+
+.register {
+   padding: 2em;
+   margin: auto;
+   width: 50%;
+}
+
+.login {
+   padding: 2em;
+   margin: auto;
+   width: 50%;
+}
+
+.post {
+   margin: auto;
+   width: 100%;
+}
+.messagebox {
+   grid-area: text;
+   width: 100%;
+}
+
+
+
+.entry {
+    display: grid;
+    margin: 0;
+    padding: 0.1em 0.1em 0.1em;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+           "user text"
+           "footer footer";
+    background-color: #ffffff;
+    border: 0.1em solid #88bbff;
+}
+
+
+.controls {
+   grid-area: footer;
+   float: right;
+   padding: 1em 0.1em 1em 0.1em;
+}
+
+
+.messagecontrols {
+   grid-area: footer;
+   float: right;
+   display: grid;
+   padding: 1em 0.1em 1em 0.1em;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+           "delete edit"
+}
+
+
+.user{
+   grid-area: user;
+   margin: 0 0 0 0;
+   padding: 0.1em 0.1em 1em 0.1em;
+}
+.text{
+   grid-area: text;
+   margin: 0 0 0 0;
+   padding: 0.6em 0.6em 1em 0.6em;
+   background-color: #ffffff;
+
+}
+
+.blob {
+   margin: 2em 0em 2em 0em;
+   height: 10em;
+}
+
+.author:before {
+    content: "—";
+}
+.author {
+    color: #505050;
+    margin-left: 1em;
+}
+
+h2 {
+	font-size: 2.3em;
+	font-weight: normal;
+}
+
+p {
+   margin-top: 0;
+   margin-bottom: 1em;
+}
+
+a {
+    color: #0066CC;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #CC0000;
+}
+a:visited {
+    color: #6633FF;
+}
+
+a:after {
+  content: "";
+  font-size: small;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 24px;
+}
+li {
+    line-height: 24px;
+}
+li ul, li ul {
+    margin-left: 48px;
+}
+p, ul, ol {
+    font-size: 16px;
+    line-height: 24px;
+}
+p {
+    max-width: 40em;
+}
+ul,ol {
+    max-width: 36em;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 40em;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 36em;
+}
+hr {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+figure, img {
+   max-width: 36em;
+}
+
+
+
+input[type=submit] {
+   border: 0.1em solid #88bbff;
+   margin-right: 0.5em;
+}
+
+input[type=submit]:hover {
+   background-color: #88bbff;
+   margin-right: 0.5em;
+}
