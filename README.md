@@ -11,4 +11,4 @@ Contains pentest report of an insecure version of INCHAT web application.**
 
 ### Assignment 2: 
 **The first mandatory assignment, inChat has been specially crafted to contain several security flaws.
-In this assignment, I will be improving the security of the web application inChat, and fixing the vulnerabilities i found from assignment 1**
+In this assignment, I will be improving the security of the web application inChat, and fixing the vulnerabilities I reported from assignment 1**
